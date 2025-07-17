@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[dev]
+  command = "npm start"
+  port = 3000
+
+[context.production.environment]
+  REACT_APP_API_URL = "https://job-analytic-backend.onrender.com/api/analytics"
